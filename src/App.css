@@ -1,0 +1,357 @@
+/* Reset & Base */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0e1117;
+  color: #f0f0f0;
+}
+
+/* Fullscreen Layout */
+.dashboard {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background-color: #111827;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar h2 {
+  color: #00adb5;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+}
+
+/* Sidebar Sections */
+.top-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bottom-section {
+  margin-top: auto;
+}
+
+/* Main Content */
+.main-content {
+  flex-grow: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+/* Text Area */
+textarea {
+  width: 100%;
+  max-width: 100%;
+  height: 160px;
+  font-family: 'Fira Code', monospace;
+  background-color: #1e1e2f;
+  color: #f0f0f0;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 14px;
+  font-size: 1rem;
+  resize: vertical;
+  margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  transition: background 0.2s ease-in-out;
+  width: 100%;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn.blue { background-color: #2563eb; }
+.btn.orange { background-color: #f97316; }
+.btn.green { background-color: #22c55e; }
+.btn.purple { background-color: #a855f7; }
+.btn.gray { background-color: #6b7280; }
+.btn.light { background-color: #d1d5db; color: #000; }
+.btn.danger { background-color: #dc3545; }
+
+.btn.small {
+  width: auto;
+  padding: 8px 14px;
+  margin-right: 8px;
+  font-size: 0.9rem;
+}
+
+/* Response Box */
+.response-box {
+  background-color: #1a1d24;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 173, 181, 0.1);
+}
+
+.response-box h2 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 6px;
+}
+
+.status {
+  font-weight: bold;
+  color: #ffc107;
+}
+
+/* Button Group below response */
+.button-group {
+  margin-top: 1rem;
+  display: flex;
+  gap: 10px;
+}
+
+/* Login signup css */
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #0e1117;
+}
+
+
+
+.auth-box {
+  background-color: #1e1f26;
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.15);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.auth-box h2 {
+  margin-bottom: 1.5rem;
+  color: #00ffff;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #2b2d35;
+  color: white;
+  font-size: 1rem;
+}
+
+.auth-box button {
+  width: 100%;
+  padding: 12px;
+  background-color: #00bcd4;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-box button:hover {
+  background-color: #0097a7;
+}
+
+.auth-box p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.auth-box p strong {
+  color: #00e5ff;
+  cursor: pointer;
+}
+.forgot-password {
+  display: block;
+  text-align: right;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  color: #00e5ff;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+/* Code History Page */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0e1117;
+  color: #f0f0f0;
+}
+
+.history-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.history-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.back-button {
+  display: block;
+  width: 100%;
+  background-color: #ef4444;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.back-button:hover {
+  background-color: #dc2626;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+.history-table th,
+.history-table td {
+  border: 1px solid #374151;
+  padding: 14px 18px;
+  text-align: left;
+}
+
+.history-table th {
+  background-color: #1f2937;
+  color: #f0f0f0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.history-table td {
+  background-color: #111827;
+  font-size: 0.95rem;
+}
+
+.history-table td button {
+  margin-right: 8px;
+}
+
+.btn-view {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-view:hover {
+  background-color: #2563eb;
+}
+
+.btn-delete {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background-color: #dc2626;
+}
+/* feed back */
+.feedback-form {
+  margin-top: 2rem;
+  background-color: #1e1f26;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feedback-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #00ffff;
+}
+
+.feedback-form select,
+.feedback-form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  margin-bottom: 1rem;
+  background-color: #2b2d35;
+  color: white;
+  font-size: 1rem;
+}
+
+.feedback-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #00c851;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-form button:hover {
+  background-color: #007e33;
+}
